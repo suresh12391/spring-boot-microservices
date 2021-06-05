@@ -1,0 +1,15 @@
+server:
+  port: 8018
+spring:
+  application:
+    name: organization-service
+  cloud:
+    config:
+      uri: http://localhost:8018
+eureka:
+  instance:
+    hostname: your-host-name-1
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
